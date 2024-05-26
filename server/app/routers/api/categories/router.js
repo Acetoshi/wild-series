@@ -1,5 +1,4 @@
 const express = require("express");
-
 const router = express.Router();
 
 /* ************************************************************************* */
@@ -7,9 +6,9 @@ const router = express.Router();
 /* ************************************************************************* */
 
 // Import item-related actions
-const { browse, read } = require("../../../controllers/programsActions");
+const { browse, read } = require("../../../controllers/gatergoriesActions");
 
-// Route to get a list of items
+// Route to browse categories
 router.get("/", browse);
 
 // Route to get a specific item by ID
