@@ -24,7 +24,7 @@ create table program (
   synopsis TEXT not null,
   poster varchar(255) not null,
   country varchar(255) not null,
-  program_year varchar(255) not null,
+  year varchar(255) not null,
   category_id int unsigned not null,
   foreign key(category_id) references category(id)
 );
